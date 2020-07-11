@@ -1,0 +1,120 @@
+
+C:\Users\young>java -cp C:\Users\young\git\SequenceVariantVersion1.7\bin sequenceVariant.RunPipeline C:\Users\young\Documents\Datasets\Zymo C:\Users\young\Documents\MasterOutput 0.97 1
+Input Directory is C:\Users\young\Documents\Datasets\Zymo
+Output Directory is C:\Users\young\Documents\MasterOutput
+Jul 10, 2020 11:28:09 PM utils.MyLogger log
+INFO: Zymo-PC1_R1_filtered.fastq has 129295 sequences
+Jul 10, 2020 11:28:10 PM utils.MyLogger log
+INFO: Zymo-PC2_R1_filtered.fastq has 114640 sequences
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Zymo-PC3_R1_filtered.fastq has 141511 sequences
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Input Directory is C:\Users\young\Documents\Datasets\Zymo
+Output Directory is C:\Users\young\Documents\MasterOutput
+Fraction of sequence variants with allele frequency more than 1 is 0.97
+ParsedZymo-PC1_R1_filtered.txt
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Number of singletons in ParsedZymo-PC1_R1_filtered.txt are 34795
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Number of sequence variants with N in ParsedZymo-PC1_R1_filtered.txt is 0 and their total abundances are 94500
+ParsedZymo-PC2_R1_filtered.txt
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Number of singletons in ParsedZymo-PC2_R1_filtered.txt are 28776
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Number of sequence variants with N in ParsedZymo-PC2_R1_filtered.txt is 0 and their total abundances are 85864
+ParsedZymo-PC3_R1_filtered.txt
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Number of singletons in ParsedZymo-PC3_R1_filtered.txt are 34245
+Jul 10, 2020 11:28:11 PM utils.MyLogger log
+INFO: Number of sequence variants with N in ParsedZymo-PC3_R1_filtered.txt is 0 and their total abundances are 107266
+Jul 10, 2020 11:28:17 PM utils.MyLogger log
+INFO: Number of total members of cluster: 2701
+Jul 10, 2020 11:28:17 PM utils.MyLogger log
+INFO: Number of total parents: 2701
+c:\Users\young\Documents\Mothur.win\mothur\mothur #set.dir(output=C:\Users\young\Documents\MasterOutput);align.seqs(candidate=C:\Users\young\Documents\MasterOutput\OneMismatchCentroids.fasta, template=c:\Users\young\Documents\Datasets\SilvaAlignment\silva.nr_v132.align)
+Windows version
+
+Using Boost
+mothur v.1.44.1
+Last updated: 4/15/20
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://forum.mothur.org
+
+Type 'quit()' to exit program
+
+[NOTE]: Setting random seed to 19760620.
+
+Script Mode
+
+
+mothur > set.dir(output=C:\Users\young\Documents\MasterOutput)
+Mothur's directories:
+outputDir=C:\Users\young\Documents\MasterOutput\
+
+mothur > align.seqs(candidate=C:\Users\young\Documents\MasterOutput\OneMismatchCentroids.fasta, template=c:\Users\young\Documents\Datasets\SilvaAlignment\silva.nr_v132.align)
+
+Using 8 processors.
+
+Reading in the c:\Users\young\Documents\Datasets\SilvaAlignment\silva.nr_v132.align template sequences...       DONE.
+It took 1127 to read  213119 sequences.
+
+Aligning sequences from C:\Users\young\Documents\MasterOutput\OneMismatchCentroids.fasta ...
+337
+337
+337
+337
+337
+337
+342
+337
+It took 64 secs to align 2701 sequences.
+
+
+It took 149 seconds to align 2701 sequences.
+
+Output File Names:
+C:\Users\young\Documents\MasterOutput\OneMismatchCentroids.align
+C:\Users\young\Documents\MasterOutput\OneMismatchCentroids.align.report
+
+
+mothur > quit()
+
+
+It took 1405 seconds to run 3 commands from your script.
+
+Jul 10, 2020 11:51:45 PM utils.MyLogger log
+INFO: Number of centroids that did not produce alignments: 0 Check OneMismatchCentroids.flip.accnos
+Jul 10, 2020 11:51:54 PM utils.MyLogger log
+INFO: Size of the indexMap is 2701
+Size of the cluster map after incorporating indeces is 2701
+Jul 10, 2020 11:51:54 PM utils.MyLogger log
+INFO: Total number of centroids in TableOfClustersWithOneMismatch.txt  2701
+Jul 10, 2020 11:53:56 PM utils.MyLogger log
+INFO: number of Silva alignments is 2701
+number of parents is 2701
+Jul 10, 2020 11:54:00 PM utils.MyLogger log
+INFO: Size of the hashmap of the parentmismatches is 2701
+Jul 10, 2020 11:54:01 PM utils.MyLogger log
+INFO: Size of the list of AbundanceAlleleFreq  7186
+Index at which the ratio is qual or greater than the selectedUserRatio is : 4121
+Jul 10, 2020 11:54:04 PM utils.MyLogger log
+INFO: Threshold is: 4.220999999999744; Antilog: 16634.1265036919
+Threshold is 16634.1265036919
+Jul 10, 2020 11:54:04 PM utils.MyLogger log
+INFO: Number of unique sequences is 3 at Allele frequency of 1.0
+
+C:\Users\young>
