@@ -1,0 +1,48 @@
+Positive
+First IF Block count is: 4376875
+Second IF Block count is: 1942084
+
+Negative
+First IF Block count is: 4376875
+Second IF Block count is: 1929022
+
+public static List<Double> getAlleleFreqFraction(List<AbundanceAlleleFreq> myList, List<Double> thresholds,
+			double alleleFrequency)
+	{
+		// TODO:  remove temp varible set
+					long firstIfBlockCount = 0;
+					long secondIfBlockCount = 0;
+
+		List<Double> listAlleleFreqFraction = new ArrayList<>();
+
+		for (Double abundace : thresholds)
+		{
+
+			long total = 0;
+			long alleleFreq = 0;			
+
+			for (AbundanceAlleleFreq ap : myList)
+			{
+
+				if (Math.log10(ap.getAbundance()) >= abundace)
+				{
+					{
+						total = total + ap.getAbundance();
+						firstIfBlockCount++;
+					}
+
+					if (ap.getAlleleFreq() > alleleFrequency)
+					{
+						alleleFreq = alleleFreq + ap.getAbundance();
+						secondIfBlockCount++;
+					}
+				}
+			}
+			listAlleleFreqFraction.add((double) alleleFreq / (double) total);
+		}
+		
+		// TODO:  Remove the following line
+		System.out.println("First IF Block count is: " + firstIfBlockCount);
+		System.out.println("Second IF Block count is: " + secondIfBlockCount);
+		return listAlleleFreqFraction;
+	}
